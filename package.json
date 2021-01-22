@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest & node ./node_modules/@cucumber/cucumber/bin/cucumber-js",
     "start": "nodemon --exec babel-node app.js"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.782.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -21,13 +22,15 @@
     "mongodb": "^3.6.3",
     "prettier": "^2.2.0",
     "ramda": "^0.27.1",
-    "uniqid": "^5.2.0"
+    "uniqid": "^5.2.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/node": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
+    "@cucumber/cucumber": "^7.0.0",
     "nodemon": "^2.0.6"
   }
 }
